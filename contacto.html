@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon"  href="./img/logo.jpeg" type="image/png" />
+  <title>La Turca Ferretería | Contacto</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="img/logo.jpeg" class="logo-navbar" alt="Logo La Turca">
+      <strong>FERROTLAPALERÍA "LA TURCA"</strong>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+      </ul>
+
+      <a class="btn btn-turca ms-lg-3 mt-3 mt-lg-0" href="#" onclick="return false;">
+        Cotizar
+      </a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container py-5">
+    <div class="d-flex flex-wrap justify-content-between align-items-end gap-3">
+      <div>
+        <h1 class="section-title">Contacto y cotizaciones</h1>
+        <p class="page-subtitle mb-0">Completa el formulario o cotiza directo por WhatsApp.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container my-5">
+
+  <div class="row g-4">
+    <!-- FORM -->
+    <div class="col-lg-7">
+      <div class="card card-soft p-4" id="formCotiza">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <div class="icon-badge"><i class="fa-solid fa-file-invoice"></i></div>
+          <h2 class="h4 fw-bold mb-0">Formulario de cotización</h2>
+        </div>
+
+        <form onsubmit="return false;">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Nombre</label>
+              <input id="c_nombre" type="text" class="form-control" placeholder="Tu nombre">
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Teléfono</label>
+              <input id="c_tel" type="text" class="form-control" placeholder="999 000 0000">
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Email (opcional)</label>
+              <input id="c_email" type="email" class="form-control" placeholder="correo@ejemplo.com">
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Categoría</label>
+              <select id="c_cat" class="form-select">
+                <option value="General" selected>General</option>
+                <option value="Tubería PVC">Tubería PVC</option>
+                <option value="Electricidad">Electricidad</option>
+                <option value="Herramientas">Herramientas</option>
+                <option value="Pintura/Consumibles">Pintura / Consumibles</option>
+              </select>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Mensaje</label>
+              <textarea id="c_msg" class="form-control" rows="4" placeholder="Ej: Cotizar 2 brochas, 3 cintas, 1 pinza..."></textarea>
+            </div>
+
+            <div class="col-12 d-flex flex-wrap gap-2">
+              <button class="btn btn-turca" type="button">
+                Enviar
+              </button>
+
+        
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- COMO COMPRAR -->
+      <div class="card card-soft p-4 mt-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <div class="icon-badge"><i class="fa-solid fa-list-check"></i></div>
+          <h3 class="h5 fw-bold mb-0">¿Cómo cotizar más rápido?</h3>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div class="step-title">Manda tu lista</div>
+              <div class="mini-muted">O foto del material que necesitas.</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="step">
+              <div class="step-num">2</div>
+              <div class="step-title">Indica medidas</div>
+              <div class="mini-muted">Diámetro, calibre, largo, marca, etc.</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="step">
+              <div class="step-num">3</div>
+              <div class="step-title">Ubicación</div>
+              <div class="mini-muted">Si es entrega, menciona zona/colonia.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="col-lg-5">
+      <div class="card card-soft p-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <div class="icon-badge"><i class="fa-solid fa-circle-info"></i></div>
+          <h2 class="h4 fw-bold mb-0">Datos</h2>
+        </div>
+
+        <div class="info-list">
+          <div class="info-item">
+            <div class="info-k">Ubicación</div>
+            <div class="info-v">García Ginerés, Mérida, Yucatán</div>
+          </div>
+          <div class="info-item">
+            <div class="info-k">WhatsApp</div>
+            <div class="info-v">999 000 0000</div>
+          </div>
+          <div class="info-item">
+            <div class="info-k">Teléfono</div>
+            <div class="info-v">(opcional)</div>
+          </div>
+        </div>
+
+        <a class="btn btn-turca w-100 mt-3" href="#" >
+          <i class="fa-brands fa-whatsapp me-1"></i> Escribir por WhatsApp
+        </a>
+      </div>
+
+      <div class="card card-soft p-4 mt-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <div class="icon-badge"><i class="fa-solid fa-location-dot"></i></div>
+          <h3 class="h5 fw-bold mb-0">Ubicación</h3>
+        </div>
+
+        <div class="map-container rounded-4 overflow-hidden">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14900.658253102856!2d-89.6345785!3d20.986039549999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56739b15ac06b3%3A0xfb6955807762b745!2sTlapaler%C3%ADa%20La%20Turca!5e0!3m2!1ses!2smx!4v1772212546080!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="mini-muted mt-2">
+  Ubicación real en Google Maps.
+</div>
+      </div>
+
+      <div class="card card-soft p-4 mt-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <div class="icon-badge"><i class="fa-solid fa-clock"></i></div>
+          <h3 class="h5 fw-bold mb-0">Horario</h3>
+        </div>
+        <div class="mini-muted mb-1"><strong>Lun – Vie:</strong> 8:00 am – 6:00 pm</div>
+        <div class="mini-muted"><strong>Sab:</strong> 8:00 am - 2:00 pm</div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER PRO -->
+<footer class="footer-pro pt-5">
+  <div class="container">
+    <div class="row g-4 align-items-start">
+
+      <div class="col-lg-4">
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <img src="img/logo.jpeg" class="footer-logo" alt="La Turca">
+          <div>
+            <div class="footer-brand">FERROTLAPALERÍA “LA TURCA”</div>
+            <div class="footer-muted">García Ginerés • Mérida, Yucatán</div>
+          </div>
+        </div>
+
+        <div class="footer-muted mb-1"><strong>Tel:</strong> 999 000 0000</div>
+        <div class="footer-muted mb-1"><strong>WhatsApp:</strong> 999 000 0000</div>
+        <div class="footer-muted"><strong>Dirección:</strong> García Ginerés, Mérida</div>
+      </div>
+
+      <div class="col-6 col-lg-2">
+        <h6 class="footer-title">Más buscados</h6>
+        <ul class="footer-list">
+          <li><a href="#" onclick="return false;">Tubería PVC</a></li>
+          <li><a href="#" onclick="return false;">Electricidad</a></li>
+          <li><a href="#" onclick="return false;">Herramientas</a></li>
+          <li><a href="#" onclick="return false;">Consumibles</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <h6 class="footer-title">Nosotros</h6>
+        <ul class="footer-list">
+          <li><a href="nosotros.html">Quiénes somos</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <div class="footer-social mt-4">
+          <a href="#" onclick="return false;" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" onclick="return false;" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="footer-line my-4">
+
+    <div class="d-flex flex-wrap justify-content-between align-items-center pb-4 footer-muted">
+      <div>© 2026 La Turca Ferretería</div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
