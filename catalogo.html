@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon"  href="./img/logo.jpeg" type="image/png" />
+  <link rel="shortcut icon" href="./img/logo.jpeg" type="image/png" />
   <title>La Turca Ferretería | Catálogo</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -32,10 +32,8 @@
         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
       </ul>
 
-      <a class="btn btn-turca ms-lg-3 mt-3 mt-lg-0"
-         href="#"
-         onclick="return false;">
-         Cotizar
+      <a class="btn btn-turca ms-lg-3 mt-3 mt-lg-0" href="#" onclick="return false;">
+        Cotizar
       </a>
     </div>
   </div>
@@ -47,76 +45,15 @@
   <div class="text-center mb-5">
     <h1 class="section-title">Catálogo</h1>
     <p class="mini-muted">
-      Productos principales. Para disponibilidad y precios exactos, cotiza por WhatsApp.
+      Productos disponibles desde la base de datos.
     </p>
   </div>
 
-  <div class="row g-4 catalog-grid">
-
-    <!-- Herramientas -->
-    <div class="col-md-6 col-lg-3">
-      <div class="card h-100">
-        <img class="card-img-top" src="img/herramientas.png" alt="Herramientas">
-        <div class="card-body text-center">
-          <h5 class="card-title">Herramientas</h5>
-          <p class="card-text mini-muted">
-            Manuales y profesionales. Truper.
-          </p>
-          <a class="btn btn-turca btn-sm"
-             href="#"
-             onclick="return false;">Cotizar</a>
-        </div>
-      </div>
+  <!-- AQUÍ SE CARGAN LOS PRODUCTOS -->
+  <div class="row g-4 catalog-grid" id="productos-container">
+    <div class="text-center">
+      <p class="mini-muted">Cargando productos...</p>
     </div>
-
-    <!-- Tubería PVC -->
-    <div class="col-md-6 col-lg-3">
-      <div class="card h-100">
-        <img class="card-img-top" src="img/slide1-pvc.jpg" alt="Tubería PVC">
-        <div class="card-body text-center">
-          <h5 class="card-title">Tubería PVC</h5>
-          <p class="card-text mini-muted">
-            Conexiones, codos, válvulas y accesorios.
-          </p>
-          <a class="btn btn-turca btn-sm"
-             href="#"
-             onclick="return false;">Cotizar</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Electricidad -->
-    <div class="col-md-6 col-lg-3">
-      <div class="card h-100">
-        <img class="card-img-top" src="img/slide2-electricidad.jpg" alt="Electricidad">
-        <div class="card-body text-center">
-          <h5 class="card-title">Electricidad</h5>
-          <p class="card-text mini-muted">
-            Cableado, contactos y extensiones.
-          </p>
-          <a class="btn btn-turca btn-sm"
-             href="#"
-             onclick="return false;">Cotizar</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Herrajes de baño-->
-    <div class="col-md-6 col-lg-3">
-      <div class="card h-100">
-        <img class="card-img-top" src="img/baño.png" alt="Herrajes y Accesorios para Baño">
-        <div class="card-body text-center">
-          <h5 class="card-title">Herrajes y Accesorios para Baño</h5>
-          <p class="card-text mini-muted">
-            Válvulas, flotadores, cespoles y accesorios sanitarios.
-          </p>
-          <a class="btn btn-turca btn-sm"
-             href="#"
-             onclick="return false;">Cotizar</a>
-        </div>
-      </div>
-    </div>
-
   </div>
 
 </main>
@@ -126,7 +63,6 @@
   <div class="container">
     <div class="row g-4 align-items-start">
 
-      <!-- Col 1: Logo + datos -->
       <div class="col-lg-4">
         <div class="d-flex align-items-center gap-3 mb-3">
           <img src="img/logo.jpeg" class="footer-logo" alt="La Turca">
@@ -136,23 +72,12 @@
           </div>
         </div>
 
-        <div class="footer-muted mb-1"><strong>Tel:</strong> 999 000 0000</div>
-        <div class="footer-muted mb-1"><strong>WhatsApp:</strong> 999 000 0000</div>
+        <div class="footer-muted mb-1"><strong>Tel:</strong> 999 278 6769</div>
+        <div class="footer-muted mb-1"><strong>WhatsApp:</strong> 999 278 6769</div>
         <div class="footer-muted"><strong>Dirección:</strong> García Ginerés, Mérida</div>
       </div>
 
-      <!-- Col 2 -->
-      <div class="col-6 col-lg-2">
-        <h6 class="footer-title">Más buscados</h6>
-        <ul class="footer-list">
-          <li><a href="#" onclick="return false;">Tubería PVC</a></li>
-          <li><a href="#" onclick="return false;">Electricidad</a></li>
-          <li><a href="#" onclick="return false;">Herramientas</a></li>
-          <li><a href="#" onclick="return false;">Herrajes de baño</a></li>
-        </ul>
-      </div>
 
-      <!-- Col 4 -->
       <div class="col-12 col-lg-3">
         <h6 class="footer-title">Nosotros</h6>
         <ul class="footer-list">
@@ -161,13 +86,19 @@
           <li><a href="catalogo.html">Catálogo</a></li>
         </ul>
 
-        <!-- Redes -->
         <div class="footer-social mt-4">
-          <a href="#" onclick="return false;" aria-label="Facebook">
+           <a 
+              href="https://www.facebook.com/FerrotlapaleriaLaTurca"
+              target="_blank"
+              aria-label="Facebook"
+              >
             <i class="fa-brands fa-facebook-f"></i>
-           </a>
-
-          <a href="#" onclick="return false;" aria-label="WhatsApp">
+          </a>
+          <a 
+            href="https://wa.me/529992786769"
+            target="_blank"
+            aria-label="WhatsApp"
+          >
             <i class="fa-brands fa-whatsapp"></i>
           </a>
         </div>  
@@ -182,6 +113,44 @@
   </div>
 </footer>
 
+<!-- SCRIPTS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const API_URL = "https://backendturca.onrender.com/api";
+
+async function cargarProductos() {
+  const contenedor = document.getElementById("productos-container");
+
+  try {
+    const res = await fetch(`${API_URL}/productos`);
+    const productos = await res.json();
+
+    contenedor.innerHTML = "";
+
+    productos.forEach(producto => {
+      contenedor.innerHTML += `
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title">${producto.nombre}</h5>
+              <p class="mini-muted">${producto.descripcion}</p>
+              <p><strong>$${producto.precio}</strong></p>
+              <a class="btn btn-turca btn-sm" href="contacto.html">Cotizar</a>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+
+  } catch (error) {
+    contenedor.innerHTML = "<p>Error al cargar productos</p>";
+    console.error(error);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", cargarProductos);
+</script>
+
 </body>
 </html>
